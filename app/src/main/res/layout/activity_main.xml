@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        tools:ignore="UselessParent">
+
+        <!--Amount Section -->
+        <TextView
+            android:id="@+id/amountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/amount">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/amountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount_hint"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck,TextContrastCheck">
+
+        </EditText>
+
+        <!-- Num Of Pax Section -->
+        <TextView
+            android:id="@+id/paxName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/num_of_pax">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/paxEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/pax_hint"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck,TextContrastCheck">
+
+        </EditText>
+
+
+        <!-- GST & Service Toggle Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ToggleButton
+                android:id="@+id/svsButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#455A64"
+                android:textOff="@string/no_svs"
+                android:textOn="@string/svs"
+                tools:ignore="TextContrastCheck">
+
+            </ToggleButton>
+
+            <ToggleButton
+                android:id="@+id/gstButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#455A64"
+                android:textOff="@string/no_gst"
+                android:textOn="@string/gst"
+                tools:ignore="TextContrastCheck,TextContrastCheck">
+
+            </ToggleButton>
+
+        </LinearLayout>
+
+        <!-- Discount Section -->
+        <TextView
+            android:id="@+id/discountName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/discount">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/discountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/discount_hint"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:minHeight="48dp"
+            tools:ignore="TextContrastCheck">
+
+        </EditText>
+
+        <!-- Payment Mode Radio Buttons -->
+        <RadioGroup
+            android:id="@+id/radioGroupPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonPaymentCash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cash" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPaymentPayNow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/paynow" />
+        </RadioGroup>
+
+
+        <!-- Split & Reset Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/splitButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/split"
+                tools:ignore="ButtonStyle">
+
+            </Button>
+
+            <Button
+                android:id="@+id/resetButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="@string/reset"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="10dp">
+
+            </Button>
+
+        </LinearLayout>
+
+        <!-- System Output -->
+
+        <TextView
+            android:id="@+id/totalBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/eachPays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/errorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

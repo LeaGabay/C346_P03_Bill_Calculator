@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Bill Please</string>
+    <string name="amount">Amount</string>
+    <string name="num_of_pax">Num of Pax</string>
+    <string name="no_svs">No SVS</string>
+    <string name="svs">SVS</string>
+    <string name="no_gst">No GST</string>
+    <string name="gst">GST</string>
+    <string name="discount">Discount (%)</string>
+    <string name="cash">Cash</string>
+    <string name="paynow">PayNow</string>
+    <string name="split">Split</string>
+    <string name="reset">Reset</string>
+    <string name="amount_hint">Enter the cost</string>
+    <string name="pax_hint">Enter number of people</string>
+    <string name="discount_hint">Enter discount in % if there is</string>
+</resources>
